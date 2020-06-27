@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/tagify.css" />
+    <script
+      src="https://kit.fontawesome.com/be8d0e4a0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bookmarks</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a class="navbar-brand" href="/">Bookmarks</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="link-list.html">Links</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="tag-list.html">Tags</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-cog"></i> TAG</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="link-tag.html" class="btn btn-light btn-block">
+              <i class="fas fa-arrow-left"></i> Back to the list
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" class="btn btn-success btn-block">
+              <i class="fas fa-check"></i> Save
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" class="btn btn-danger btn-block">
+              <i class="fas fa-trash"></i> Delete TAG
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="form">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>Edit URL</h4>
+              </div>
+              <div class="card-body">
+                <form action="">
+                  <div class="form-group">
+                    <label for="title">Tag Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      value="Videos"
+                    />
+                  </div>                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy; <span id="year"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+      // Get the current year for the copyright
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
